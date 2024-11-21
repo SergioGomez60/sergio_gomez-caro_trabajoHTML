@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="./../images/MF-2-Photoroom.ico" >
+    <title>Presupuestos</title>
+</head>
+<body>
+    <header>
+        <h1><img class="logo" src="./../images/MF-2-Photoroom.png" alt="logo de la empresa mariofitness" width="500" height="500"></h1>
+        <nav class="links-navegador3">
+            <a href="./../index.html">Inicio</a>
+            <a href="./productos.html">Productos</a>
+            <a href="#">Presupuestos</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="main-presupuestos">
+        <img src="./../images/muñeco-fuerte2-Photoroom.png" alt="imagen de un muñeco fuerte con una libreta">
+        <form action="./../index.html" method="post" class="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre completo" required class="inputs" pattern="[a-zA-Z áÁéÉíÍóÓúÚñÑ]+">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Escribe tu email" required class="inputs" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono" required class="inputs" pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}">
+
+            <label for="informacion">Solicite mas información</label>
+            <textarea name="informacion" id="informacion" placeholder="Escribe mas información sobre ti (opcional)" cols="30" rows="10" class="informacion"></textarea>
+
+            <div class="politica-privacidad">
+            <input type="checkbox" name="privacidad" value="si" id="privacidad" class="checkbox" required><label for="privacidad">Marcando esta casilla aceptas la política de privacidad de esta página web</label>
+            </div>
+
+            <input type="submit" class="input-enviar">
+        </form> 
+    </main>
+
+    <footer>
+        <p class="texto-pie">¡SÍGUEME!</p>
+        <a href="https://www.instagram.com/maario_fitness/" title="enlace que lleva a instagram" target="_blank">
+        <img class="redes-sociales"  src="./../images/instagram.png" alt="icono de instagram" width="512" height="512"></a>
+        <a href="https://www.facebook.com/people/MarioFitness-Entrenador-Online/61558977016262/" title="enlace que lleva a facebook" target="_blank">
+        <img class="redes-sociales" src="./../images/facebook.png" alt="icono de facebook" width="512" height="512"></a>
+        <div class="direccion">
+            <img class="foto-direccion" src="./../images/direccion.png" alt="icono de direccion">
+            <p class="texto-direccion">C/ancha,17 (Novés,Toledo)</p>
+        </div>
+        <p> © 2024 Mario Gómez</p>
+    </footer>
+</body>
+</html>
